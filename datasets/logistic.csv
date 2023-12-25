@@ -1,0 +1,21 @@
+Fleet Type,Capacity,Cost,,
+Fuso,8 ton,"Cilincing.jkt timur= 1,6jt
+Cilincing.jkt barat=1,6jt
+Cilincing .jkt jkt utara=1,6jt
+Cilincing.jkt slatan =1,6jt
+Cilincing .bkasi = 1,8jt
+Cilincing depok =1,8jt
+Cilincing.cikarang =1,8jt
+Cilincing .gng sindur=1,9jt
+Cilincing tangrang = 1,8jt ",,"Logistic fee is calculated based on the longest route from the fleet pool.
+Fleet pool is located in Cilincing.
+So, for example the supplier is located in Gunung Sindur but the customer is located in Jakarta Timur, the logistic fee = 1.9 Mio (if we're using Fuso truck)"
+Tronton,22 ton,"Cilincing.jkt timur= 2,5jt
+Cilincing.jkt barat=2,5jt
+Cilincing .jkt jkt utara=2,5jt
+Cilincing.jkt slatan =2,5jt
+Cilincing .bkasi = 3,45jt
+Cilincing depok =3,45jt
+Cilincing.cikarang =3,45jt
+Cilincing .gng sindur=3,6jt
+Cilincing tangrang = 3,45jt ",,

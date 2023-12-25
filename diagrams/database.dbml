@@ -1,0 +1,70 @@
+Table customers {
+    id varchar [primary key]
+    address varchar
+    city varchar
+    state varchar
+}
+
+Table suppliers {
+    id varchar [primary key]
+    address varchar
+    city varchar
+    state varchar
+}
+
+Table products {
+    id varchar [primary key]
+    code varchar
+    name varchar
+    unit_of_measure varchar
+}
+
+Table product_suppliers {
+    id integer [primary key]
+    product_id varchar [ref: > products.id]
+    supplier_id varchar [ref: > suppliers.id]
+    unit_price decimal
+    stock_available integer
+}
+
+Table request_for_quotations {
+    id integer [primary key]
+    customer_id varchar [ref: > customers.id]
+    product_id varchar [ref: > products.id]
+    qty integer
+}
+
+Table purchase_orders {
+    id integer [primary key]
+    customer_id varchar [ref: > customers.id]
+    date date
+    product_id varchar [ref: > products.id]
+    qty integer
+    unit_price decimal
+}
+
+Table logistic_fleets {
+    id integer [primary key]
+    type varchar
+    capacity integer
+}
+
+Table logistic_costs {
+    id integer [primary key]
+    fleet_id integer [ref: > logistic_fleets.id]
+    origin varchar
+    destination varchar
+    cost decimal
+}
+
+Table product_prices {
+    id integer [primary key]
+    product_id varchar [ref: > products.id]
+    cogs_price decimal
+    historical_price decimal
+    historical_price_margin decimal
+    best_price decimal
+    best_price_margin decimal
+    recommended_price decimal
+    recommended_price_margin decimal
+}
